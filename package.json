@@ -1,0 +1,58 @@
+{
+  "name": "facturx-mcp",
+  "version": "1.0.1",
+  "description": "Serveur MCP pour la facturation électronique Factur-X (norme EN 16931) et l'intégration Chorus Pro — conforme à la réforme française de facturation B2B 2026",
+  "type": "module",
+  "bin": {
+    "facturx-mcp": "dist/index.js"
+  },
+  "files": [
+    "dist/",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "factur-x",
+    "chorus-pro",
+    "e-invoicing",
+    "e-facturation",
+    "france",
+    "facturation",
+    "en16931",
+    "zugferd",
+    "b2b",
+    "claude"
+  ],
+  "homepage": "https://github.com/votre-user/facturx-mcp#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/votre-user/facturx-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/votre-user/facturx-mcp/issues"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.6.0",
+    "fast-xml-parser": "^4.4.0",
+    "pdf-lib": "^1.17.1",
+    "xmlbuilder2": "^3.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@vercel/node": "^5.6.6",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0"
+  }
+}
