@@ -45,7 +45,7 @@ Sans clé de licence, le mode gratuit est actif (10 générations/jour).
 
 - **Gratuit** — 10 générations/jour, outils Factur-X de base
 - **Pro — 9.99 €/mois** — Outils illimités + Chorus Pro → [Acheter maintenant](https://buy.polar.sh/polar_cl_hhTVyZpvFsZ2jlddR0OZz0ZP4KG9FuebS5OYp0mKRNR)
-- **Enterprise — 49 €/mois** — Multi-comptes Chorus Pro + support prioritaire
+- **Enterprise — 49.99 €/mois** — Multi-comptes Chorus Pro + support prioritaire
 
 ## Variables d'environnement
 
