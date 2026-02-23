@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Merci pour votre achat — Facturx MCP</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <script>tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter','sans-serif'], mono: ['JetBrains Mono','monospace'] } } } }</script>
+</head>
+<body class="bg-gray-50 font-sans antialiased min-h-screen flex items-center justify-center px-6">
+
+  <div class="max-w-lg w-full">
+
+    <!-- Success card -->
+    <div class="bg-white rounded-2xl shadow-xl p-10 text-center mb-6">
+      <div class="w-20 h-20 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-6">
+        <svg class="w-10 h-10 text-emerald-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>
+        </svg>
+      </div>
+      <h1 class="text-2xl font-extrabold text-gray-900 mb-3">Paiement confirmé !</h1>
+      <p class="text-gray-500 leading-relaxed">
+        Votre licence <strong class="text-gray-800">Facturx MCP</strong> est en cours de génération.<br>
+        Vous allez recevoir un email de <strong class="text-gray-800">noreply@facturx-mcp.com</strong> dans les prochaines minutes.
+      </p>
+    </div>
+
+    <!-- Steps -->
+    <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-8 mb-6">
+      <h2 class="font-bold text-gray-900 mb-6">Activer votre licence en 3 étapes</h2>
+
+      <div class="space-y-6">
+        <div class="flex gap-4">
+          <div class="w-8 h-8 bg-indigo-600 rounded-full flex items-center justify-center text-white text-sm font-bold shrink-0">1</div>
+          <div>
+            <p class="font-semibold text-gray-900 text-sm">Vérifiez votre email</p>
+            <p class="text-gray-500 text-sm mt-1">Un email contenant votre clé <code class="bg-gray-100 px-1 rounded font-mono text-xs">FTRX-...</code> vous a été envoyé. Vérifiez vos spams si besoin.</p>
+          </div>
+        </div>
+
+        <div class="flex gap-4">
+          <div class="w-8 h-8 bg-indigo-600 rounded-full flex items-center justify-center text-white text-sm font-bold shrink-0">2</div>
+          <div>
+            <p class="font-semibold text-gray-900 text-sm">Installez le package si ce n'est pas fait</p>
+            <div class="bg-gray-900 rounded-lg px-4 py-3 mt-2 font-mono text-xs text-emerald-400">
+              $ <span class="text-white">npm install -g facturx-mcp</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex gap-4">
+          <div class="w-8 h-8 bg-indigo-600 rounded-full flex items-center justify-center text-white text-sm font-bold shrink-0">3</div>
+          <div>
+            <p class="font-semibold text-gray-900 text-sm">Ajoutez la clé dans Claude Desktop</p>
+            <p class="text-gray-500 text-xs mt-1 mb-2">
+              Fichier : <code class="bg-gray-100 px-1 rounded font-mono">%APPDATA%\Claude\claude_desktop_config.json</code>
+            </p>
+            <div class="bg-gray-900 rounded-lg px-4 py-3 font-mono text-xs text-gray-300 overflow-x-auto">
+<span class="text-gray-500">{</span>
+  <span class="text-sky-400">"mcpServers"</span><span class="text-gray-500">: {</span>
+    <span class="text-sky-400">"facturx"</span><span class="text-gray-500">: {</span>
+      <span class="text-sky-400">"command"</span><span class="text-gray-500">:</span> <span class="text-emerald-400">"facturx-mcp"</span><span class="text-gray-500">,</span>
+      <span class="text-sky-400">"env"</span><span class="text-gray-500">: {</span>
+        <span class="text-sky-400">"FACTURX_LICENSE_KEY"</span><span class="text-gray-500">:</span> <span class="text-amber-400">"FTRX-..."</span>
+      <span class="text-gray-500">}</span>
+    <span class="text-gray-500">}</span>
+  <span class="text-gray-500">}</span>
+<span class="text-gray-500">}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Help -->
+    <div class="bg-amber-50 border border-amber-200 rounded-xl p-5 text-sm text-amber-800 mb-6">
+      <strong>Vous n'avez pas reçu l'email ?</strong><br>
+      Vérifiez vos spams. Si le problème persiste après 5 minutes, contactez-nous à <a href="mailto:contact@facturx-mcp.com" class="underline font-semibold">contact@facturx-mcp.com</a>
+    </div>
+
+    <div class="text-center">
+      <a href="/" class="text-indigo-600 hover:text-indigo-800 text-sm font-medium transition-colors">← Retour à l'accueil</a>
+    </div>
+
+  </div>
+
+</body>
+</html>
