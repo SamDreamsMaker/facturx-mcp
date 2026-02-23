@@ -5,6 +5,6 @@
       "maxDuration": 10
     }
   },
-  "buildCommand": "echo 'no build needed'",
-  "outputDirectory": "."
+  "buildCommand": "echo done",
+  "outputDirectory": "public"
 }
