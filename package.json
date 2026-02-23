@@ -1,6 +1,6 @@
 {
   "name": "facturx-mcp",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Serveur MCP pour la facturation électronique Factur-X (norme EN 16931) et l'intégration Chorus Pro — conforme à la réforme française de facturation B2B 2026",
   "type": "module",
   "bin": {
