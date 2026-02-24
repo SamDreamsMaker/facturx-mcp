@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1200px;
+      height: 630px;
+      overflow: hidden;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: linear-gradient(135deg, #1e1b4b 0%, #312e81 55%, #1e3a5f 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    /* Cercles décoratifs */
+    .circle-1 {
+      position: absolute;
+      width: 500px; height: 500px;
+      border-radius: 50%;
+      background: rgba(99,102,241,0.15);
+      top: -150px; right: -100px;
+    }
+    .circle-2 {
+      position: absolute;
+      width: 300px; height: 300px;
+      border-radius: 50%;
+      background: rgba(103,232,249,0.08);
+      bottom: -80px; left: 60px;
+    }
+
+    .content {
+      position: relative;
+      z-index: 10;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 0 100px;
+      width: 100%;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.2);
+      color: #c7d2fe;
+      font-size: 15px;
+      font-weight: 500;
+      padding: 8px 18px;
+      border-radius: 999px;
+      margin-bottom: 28px;
+      letter-spacing: 0.01em;
+    }
+    .badge-dot {
+      width: 8px; height: 8px;
+      border-radius: 50%;
+      background: #34d399;
+    }
+
+    .logo-row {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 20px;
+    }
+    .logo-icon {
+      width: 56px; height: 56px;
+      background: #4f46e5;
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .logo-icon svg {
+      width: 32px; height: 32px;
+      stroke: white;
+    }
+    .logo-name {
+      font-size: 28px;
+      font-weight: 700;
+      color: white;
+      letter-spacing: -0.01em;
+    }
+
+    h1 {
+      font-size: 58px;
+      font-weight: 800;
+      line-height: 1.1;
+      margin-bottom: 20px;
+      letter-spacing: -0.02em;
+    }
+    h1 .white { color: white; }
+    h1 .gradient {
+      background: linear-gradient(90deg, #a5b4fc, #67e8f9);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .description {
+      font-size: 20px;
+      color: #a5b4fc;
+      margin-bottom: 36px;
+      max-width: 700px;
+      line-height: 1.5;
+    }
+
+    .footer-row {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+    .compat {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: #c7d2fe;
+      font-size: 15px;
+      font-weight: 500;
+    }
+    .compat-dot { color: #6366f1; }
+    .price-tag {
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.25);
+      color: white;
+      font-size: 16px;
+      font-weight: 600;
+      padding: 10px 22px;
+      border-radius: 10px;
+    }
+    .url {
+      margin-left: auto;
+      color: rgba(255,255,255,0.4);
+      font-size: 16px;
+      font-weight: 500;
+    }
+  </style>
+</head>
+<body>
+  <div class="circle-1"></div>
+  <div class="circle-2"></div>
+
+  <div class="content">
+    <div class="badge">
+      <span class="badge-dot"></span>
+      Réforme e-facturation B2B — septembre 2026
+    </div>
+
+    <div class="logo-row">
+      <div class="logo-icon">
+        <svg fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+        </svg>
+      </div>
+      <span class="logo-name">facturx-mcp</span>
+    </div>
+
+    <h1>
+      <span class="white">Factures </span><span class="gradient">Factur-X EN 16931</span><br>
+      <span class="white">depuis votre IA</span>
+    </h1>
+
+    <p class="description">
+      Générez, validez et soumettez des factures conformes<br>
+      + intégration Chorus Pro B2G — 100% offline
+    </p>
+
+    <div class="footer-row">
+      <div class="price-tag">À partir de $9.99/mois</div>
+      <div class="compat">
+        Claude <span class="compat-dot">·</span> Cursor <span class="compat-dot">·</span> Windsurf <span class="compat-dot">·</span> tous clients MCP
+      </div>
+      <span class="url">facturx-mcp.com</span>
+    </div>
+  </div>
+</body>
+</html>
