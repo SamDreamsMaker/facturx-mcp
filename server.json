@@ -1,0 +1,16 @@
+{
+  "name": "io.github.SamDreamsMaker/facturx-mcp",
+  "version": "1.0.2",
+  "description": "MCP server for French e-invoicing (Factur-X EN 16931) and Chorus Pro B2G integration. Ready for the 2026 French B2B reform.",
+  "homepage": "https://facturx-mcp.com",
+  "license": "MIT",
+  "packages": [
+    {
+      "registry": "npm",
+      "name": "facturx-mcp",
+      "version": "1.0.2",
+      "runtime": "node",
+      "environments": ["local"]
+    }
+  ]
+}
