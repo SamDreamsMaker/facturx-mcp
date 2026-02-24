@@ -1,10 +1,70 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" prefix="og: https://ogp.me/ns#">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Facturx MCP — Facturation électronique Factur-X pour Claude</title>
-  <meta name="description" content="Générez, validez et soumettez des factures Factur-X conformes à la norme EN 16931 et à la réforme française B2B 2026 directement depuis Claude.">
+
+  <!-- SEO primaire -->
+  <title>Facturx MCP — Facturation électronique Factur-X EN 16931 + Chorus Pro</title>
+  <meta name="description" content="Serveur MCP pour générer, valider et soumettre des factures Factur-X conformes EN 16931 et Chorus Pro B2G. Compatible Claude, Cursor, Windsurf. Prêt pour la réforme e-facturation B2B française 2026.">
+  <meta name="keywords" content="factur-x, facturation électronique, EN 16931, chorus pro, MCP, model context protocol, e-facturation, réforme 2026, B2B, ZUGFeRD, facture XML, PISTE API, claude, cursor, windsurf">
+  <meta name="author" content="facturx-mcp">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://facturx-mcp.com/">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://facturx-mcp.com/">
+  <meta property="og:title" content="Facturx MCP — Facturation électronique Factur-X EN 16931 + Chorus Pro">
+  <meta property="og:description" content="Serveur MCP pour générer, valider et soumettre des factures Factur-X conformes EN 16931 et Chorus Pro B2G. Compatible Claude, Cursor, Windsurf. Prêt pour la réforme 2026.">
+  <meta property="og:image" content="https://facturx-mcp.com/og-image.png">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:site_name" content="Facturx MCP">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://facturx-mcp.com/">
+  <meta name="twitter:title" content="Facturx MCP — Facturation électronique Factur-X EN 16931 + Chorus Pro">
+  <meta name="twitter:description" content="Serveur MCP pour générer, valider et soumettre des factures Factur-X conformes EN 16931 et Chorus Pro B2G. Prêt pour la réforme 2026.">
+  <meta name="twitter:image" content="https://facturx-mcp.com/og-image.png">
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "facturx-mcp",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Windows, macOS, Linux",
+    "url": "https://facturx-mcp.com",
+    "description": "Serveur MCP pour la facturation électronique Factur-X (norme EN 16931) et l'intégration Chorus Pro — conforme à la réforme française de facturation B2B 2026.",
+    "offers": [
+      {
+        "@type": "Offer",
+        "name": "Gratuit",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      {
+        "@type": "Offer",
+        "name": "Pro",
+        "price": "9.99",
+        "priceCurrency": "USD"
+      },
+      {
+        "@type": "Offer",
+        "name": "Enterprise",
+        "price": "49.99",
+        "priceCurrency": "USD"
+      }
+    ],
+    "softwareVersion": "1.0.2",
+    "downloadUrl": "https://www.npmjs.com/package/facturx-mcp",
+    "codeRepository": "https://github.com/SamDreamsMaker/facturx-mcp",
+    "keywords": "factur-x, EN 16931, chorus pro, MCP, e-facturation, B2B, ZUGFeRD"
+  }
+  </script>
+
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
