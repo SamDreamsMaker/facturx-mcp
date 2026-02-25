@@ -1,6 +1,6 @@
 {
   "name": "facturx-mcp",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Serveur MCP pour la facturation électronique Factur-X (norme EN 16931) et l'intégration Chorus Pro — conforme à la réforme française de facturation B2B 2026",
   "type": "module",
   "bin": {
@@ -31,13 +31,13 @@
     "b2b",
     "claude"
   ],
-  "homepage": "https://github.com/votre-user/facturx-mcp#readme",
+  "homepage": "https://facturx-mcp.com",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/votre-user/facturx-mcp.git"
+    "url": "git+https://github.com/SamDreamsMaker/facturx-mcp.git"
   },
   "bugs": {
-    "url": "https://github.com/votre-user/facturx-mcp/issues"
+    "url": "https://github.com/SamDreamsMaker/facturx-mcp/issues"
   },
   "license": "MIT",
   "mcpName": "io.github.SamDreamsMaker/facturx-mcp",
